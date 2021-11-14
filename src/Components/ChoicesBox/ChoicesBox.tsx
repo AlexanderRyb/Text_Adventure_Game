@@ -1,8 +1,9 @@
 import React from 'react';
+import './styles.css'
 
 function ChoicesBox() {
   return (
-    <div className="ChoicesBox">
+    <div className="choices-box">
      Choices will be in this box
     </div>
   );
