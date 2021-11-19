@@ -1,4 +1,4 @@
-export const addToCart =() => {
+export const changeText =() => {
     return {
         type: "start"
     }

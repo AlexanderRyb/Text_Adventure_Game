@@ -4,8 +4,7 @@ import './styles.css'
 function TextBox() {
   return (
     <div className="text-box">
-     Text will be here
-    </div>
+The game    </div>
   );
 }
 
