@@ -4,11 +4,11 @@ import {changeText} from "../../redux/actions"
 import {connect} from "react-redux";
 
 
-function ChoicesBox() {
+function ChoicesBox(props) {
   return (
     <div className="choices-box">
      <button className="choice-button"
-     onClick={() => this.props.changeText()}//get id of text box in other element?
+     onClick={() => props.changeText()}//get id of text box in other element?
       
     >
 Start the game
@@ -20,7 +20,6 @@ Start the game
 }
 const mapStateToProps = (state) => {
   return {
-
   }
 }
 const mapDispatchToProps = (dispatch) => {
