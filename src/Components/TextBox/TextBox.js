@@ -1,12 +1,23 @@
 import React from 'react';
 import './styles.css'
 import {connect} from "react-redux";
+export function TextBox(props) {
+  console.log(props)
+  //const text = props.textNode
 
-function TextBox() {
   return (
     <div className="text-box">
-The game    </div>
+   </div>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    textNode: state.test
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
 
-export default TextBox;
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(TextBox)

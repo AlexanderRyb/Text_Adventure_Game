@@ -29,4 +29,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default ChoicesBox;
+export default connect(mapStateToProps, mapDispatchToProps)(ChoicesBox)

@@ -1,4 +1,6 @@
 const initialState = {
+    textNodes: ["hello there!"],
+    test: "test!"
     
 }
 const Reducer =(state = initialState, action)=>{
