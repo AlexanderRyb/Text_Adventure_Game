@@ -1,15 +1,20 @@
 const initialState = {
-    textNodes: ["hello there!"],
-    test: "test!"
+    textNode: "hello there!",
+    
     
 }
+let test = "changed"
 const Reducer =(state = initialState, action)=>{
     switch(action.type){
         case "CHANGETEXT":
-            console.log('f')
+           
             return {
-                state
+                ...state, 
+                textNode:test
+                
             }
+        default: 
+        return state;    
     }
 }
 export default Reducer;
