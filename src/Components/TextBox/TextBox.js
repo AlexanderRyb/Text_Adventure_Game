@@ -7,13 +7,14 @@ export function TextBox(props) {
 
   return (
     <div className="text-box">
-      {props.textNode}
+      ?
+      {props.TextNode}
    </div>
   );
 }
 const mapStateToProps = state => {
   return {
-    textNode: state.textNode
+    textNode: state.currentTextNode
   }
 }
 const mapDispatchToProps = (dispatch) => {

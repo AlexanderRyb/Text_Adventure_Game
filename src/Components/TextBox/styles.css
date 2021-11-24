@@ -1,5 +1,11 @@
 .text-box{
-    border: solid 1px green;
+    border: solid 4px grey;
     text-align: center;
 
+}
+.text-1{
+    display: block;
+}
+.text-2{
+    display: none;
 }
