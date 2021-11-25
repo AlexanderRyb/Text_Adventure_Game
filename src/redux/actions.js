@@ -1,5 +1,5 @@
-export const changeText =() => {
+export const start =() => {
     return {
-        type: "CHANGETEXT"
+        type: "START"
     }
 }
