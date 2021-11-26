@@ -3,7 +3,6 @@ import "./styles.css";
 import { connect } from "react-redux";
 export function TextBox(props) {
   console.log(props.textNode);
-  //const text = props.textNode
 
   return <div className="text-box">{props.textNode}</div>;
 }

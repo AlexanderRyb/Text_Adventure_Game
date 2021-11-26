@@ -1,3 +1,6 @@
+button{
+    display: none;
+}
 .choices-box{
     border: 1px solid black;
     width: 100%;
@@ -11,4 +14,10 @@
     border: none;
     height: 40px;
 
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
 }
