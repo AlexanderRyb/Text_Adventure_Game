@@ -1,11 +1,9 @@
 .text-box{
-    border: solid 4px grey;
-    text-align: center;
+    border-left: 4px solid #76C883;
+    padding-left: 8px;
+    text-align: start;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
 
-}
-.text-1{
-    display: block;
-}
-.text-2{
-    display: none;
 }

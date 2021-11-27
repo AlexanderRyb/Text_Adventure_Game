@@ -33,6 +33,7 @@ const Reducer =(state = initialState, action)=>{
             return {
                 ...state, 
                 currentTextNode: textNodes[2]
+
             }
         case "GOSTRAIGHTAHEAD":
             return {
