@@ -5,18 +5,19 @@ import { left } from "../../redux/actions";
 import { straight } from "../../redux/actions";
 import { right } from "../../redux/actions";
 import { attic } from "../../redux/actions";
+import { newgame } from "../../redux/actions";
 import { connect } from "react-redux";
 
 function ChoicesBox(props) {
   return (
     <div className="choices-box">
-      <button className={props.showStartButton} onClick={() => props.start()}>
+      <button className={props.showNewgameButton} onClick={() => props.newgame()}>
         Start the game
       </button>
       <button className={props.showLeftButton} onClick={() => props.left()}>
         Go left
       </button>
-      
+
       <button
         className={props.showStraightButton}
         onClick={() => props.straight()}
@@ -40,6 +41,7 @@ const mapStateToProps = (state) => {
     showRightButton: state.showRightButton,
     showStraightButton: state.showStraightButton,
     showAtticButton: state.showAtticButton,
+    showNewgameButton: state.showNewgameButton
   };
 };
 const mapDispatchToProps = (dispatch) => {
@@ -49,6 +51,7 @@ const mapDispatchToProps = (dispatch) => {
     right: () => dispatch(right()),
     straight: () => dispatch(straight()),
     attic: () => dispatch(attic()),
+    newgame: () => dispatch(newgame())
   };
 };
 

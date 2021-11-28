@@ -12,7 +12,8 @@ const initialState = {
     showStartButton: "visible",
     showLeftButton: "hidden",
     showStraightButton: "hidden",
-    showRightButton: "hidden"
+    showRightButton: "hidden",
+    showNewgameButton: "hidden"
 
     
 }
@@ -34,7 +35,7 @@ const Reducer =(state = initialState, action)=>{
              return {
                  ...state,
                  currentTextNode: [0],
-                 
+
              }   
         case "GOLEFT":
             return {
@@ -52,17 +53,25 @@ const Reducer =(state = initialState, action)=>{
             return {
                 ...state, 
                 currentTextNode: textNodes[3], 
+                showStraightButton: "hidden",
+                showRightButton: "hidden",
+                showLeftButton: "hidden"
+
             } 
         case "GORIGHT":
             return {
                 ...state, 
-                currentTextNode: textNodes[4]
+                currentTextNode: textNodes[4],
+                showStraightButton: "hidden",
+                showRightButton: "hidden",
+                showLeftButton: "hidden"
             }
         case "ATTIC":
             return {
                 ...state,
                 currentTextNode: textNodes[5],
                 showAtticButton: "hidden",
+                showNewgameButton: "visible"
                 
             }    
         default: 

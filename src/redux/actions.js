@@ -3,6 +3,11 @@ export const start =() => {
         type: "START"
     }
 }
+export const newgame =()=>{
+    return {
+        type: "NEWGAME"
+    }
+}
 export const left =() => {
     return {
         type: "GOLEFT"
