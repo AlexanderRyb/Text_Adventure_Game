@@ -18,3 +18,18 @@ export const straight =() => {
         type: "GOSTRAIGHTAHEAD"
     }
 }
+export const attic =() => {
+    return {
+        type: "ATTIC"
+    }
+}
+export const kitchen =() => {
+    return {
+        type: "KITCHEN"
+    }
+}
+export const bedroom =() => {
+    return {
+        type: "BEDROOM"
+    }
+}

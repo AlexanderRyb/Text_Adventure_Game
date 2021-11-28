@@ -1,9 +1,10 @@
 let textNodes = [
     "Click the button to start", 
     "You are at a crossroad. Where do you want to go?",
-    "The road leads to am empty house.",
+    "The road leads to an empty house.",
     "The road leads to a lake.",
-    "The road leads to a graveyard"
+    "The road leads to a graveyard",
+    "You tripped and broke your neck after falling down stairs"
 ]
 
 const initialState = {    
@@ -29,22 +30,41 @@ const Reducer =(state = initialState, action)=>{
 
                 
             }
+         case "NEWGAME":
+             return {
+                 ...state,
+                 currentTextNode: [0],
+                 
+             }   
         case "GOLEFT":
             return {
                 ...state, 
-                currentTextNode: textNodes[2]
+                currentTextNode: textNodes[2],
+                 showStraightButton: "hidden",
+                showRightButton: "hidden",
+                showLeftButton: "hidden",
+                showAtticButton: "visible"
+
+
 
             }
         case "GOSTRAIGHTAHEAD":
             return {
                 ...state, 
-                currentTextNode: textNodes[3]
+                currentTextNode: textNodes[3], 
             } 
         case "GORIGHT":
             return {
                 ...state, 
                 currentTextNode: textNodes[4]
             }
+        case "ATTIC":
+            return {
+                ...state,
+                currentTextNode: textNodes[5],
+                showAtticButton: "hidden",
+                
+            }    
         default: 
         return state;    
     }
