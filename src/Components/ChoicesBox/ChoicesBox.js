@@ -11,8 +11,11 @@ import { connect } from "react-redux";
 function ChoicesBox(props) {
   return (
     <div className="choices-box">
-      <button className={props.showNewgameButton} onClick={() => props.newgame()}>
+      <button className={props.showStartButton} onClick={() => props.start()}>
         Start the game
+      </button>
+      <button className={props.showNewgameButton} onClick={()=> props.newgame()}> 
+Try again
       </button>
       <button className={props.showLeftButton} onClick={() => props.left()}>
         Go left

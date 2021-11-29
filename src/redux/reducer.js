@@ -32,9 +32,19 @@ const Reducer =(state = initialState, action)=>{
                 
             }
          case "NEWGAME":
+            console.log(state)
+
              return {
-                 ...state,
-                 currentTextNode: [0],
+                ...state, 
+                currentTextNode: textNodes[0],
+                showStartButton: "visible",
+                showLeftButton: "hidden",
+                showStraightButton: "hidden",
+                showRightButton: "hidden",
+                showNewgameButton: "hidden"
+            
+                
+                
 
              }   
         case "GOLEFT":
@@ -67,6 +77,8 @@ const Reducer =(state = initialState, action)=>{
                 showLeftButton: "hidden"
             }
         case "ATTIC":
+            console.log(state)
+
             return {
                 ...state,
                 currentTextNode: textNodes[5],
