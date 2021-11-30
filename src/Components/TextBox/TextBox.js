@@ -4,11 +4,13 @@ import { connect } from "react-redux";
 export function TextBox(props) {
   console.log(props.textNode);
 
-  return <div className="text-box">{props.textNode}</div>;
+  return <div className={props.colorTheme} >{props.textNode}
+  </div>;
 }
 const mapStateToProps = (state) => {
   return {
     textNode: state.currentTextNode,
+    colorTheme: state.colorTheme
   };
 };
 const mapDispatchToProps = (dispatch) => {

@@ -7,23 +7,28 @@ let textNodes = [
   "You tripped and broke your neck after falling down stairs",
   "There's nothing here",
   "You drowned. Better luck next time",
-  "You have been haunted to death",
-  "9",
-  "10",
+  "You have been haunted to death"  
 ];
 
 const initialState = {
   currentTextNode: textNodes[0],
+  colorTheme: "dark",
   showStartButton: "visible",
   showLeftButton: "hidden",
   showStraightButton: "hidden",
   showRightButton: "hidden",
   showNewgameButton: "hidden",
   showSwimButton: "hidden",
-  showInvestigateButton: "hidden"
+  showInvestigateButton: "hidden",
+  
 };
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
+    case "LIGHTTHEME": 
+    return {
+      ...state, 
+      colorTheme: "light"
+    }
     case "START":
       return {
         ...state,

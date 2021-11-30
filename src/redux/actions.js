@@ -1,3 +1,8 @@
+export const toggleTheme =() => {
+    return {
+        type: "LIGHTTHEME"
+    }
+}
 export const start =() => {
     return {
         type: "START"

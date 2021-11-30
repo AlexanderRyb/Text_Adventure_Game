@@ -1,9 +1,16 @@
-.text-box{
-    border-left: 4px solid #76C883;
-    padding-left: 8px;
-    text-align: start;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13pt;
-
+.light {
+  border-left: 4px solid #76c883;
+  padding-left: 8px;
+  text-align: start;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13pt;
+}
+.dark {
+  border-left: 4px solid #76c883;
+  padding-left: 8px;
+  text-align: start;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13pt;
 }
