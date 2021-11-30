@@ -33,8 +33,20 @@ export const kitchen =() => {
         type: "KITCHEN"
     }
 }
-export const bedroom =() => {
+export const swim =() => {
     return {
-        type: "BEDROOM"
+        type: "SWIM"
+    }
+}
+export const goBack =() => {
+    return{
+        type: "GOBACK"
+    }
+}
+export const investigate =() =>{
+    return{
+
+        type: "INVESTIGATE"
+        
     }
 }

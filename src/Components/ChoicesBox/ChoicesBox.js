@@ -6,6 +6,9 @@ import { straight } from "../../redux/actions";
 import { right } from "../../redux/actions";
 import { attic } from "../../redux/actions";
 import { newgame } from "../../redux/actions";
+import { swim } from "../../redux/actions";
+import { investigate } from "../../redux/actions"
+
 import { connect } from "react-redux";
 
 function ChoicesBox(props) {
@@ -14,8 +17,11 @@ function ChoicesBox(props) {
       <button className={props.showStartButton} onClick={() => props.start()}>
         Start the game
       </button>
-      <button className={props.showNewgameButton} onClick={()=> props.newgame()}> 
-Try again
+      <button
+        className={props.showNewgameButton}
+        onClick={() => props.newgame()}
+      >
+        Try again
       </button>
       <button className={props.showLeftButton} onClick={() => props.left()}>
         Go left
@@ -34,6 +40,12 @@ Try again
       <button className={props.showAtticButton} onClick={() => props.attic()}>
         Go to attic
       </button>
+      <button className={props.showSwimButton} onClick={() => props.swim()}>
+        Swim in the lake
+      </button>
+      <button className={props.showInvestigateButton} onClick={() => props.investigate()}>
+       Investigate
+      </button>
     </div>
   );
 }
@@ -44,7 +56,9 @@ const mapStateToProps = (state) => {
     showRightButton: state.showRightButton,
     showStraightButton: state.showStraightButton,
     showAtticButton: state.showAtticButton,
-    showNewgameButton: state.showNewgameButton
+    showNewgameButton: state.showNewgameButton,
+    showSwimButton: state.showSwimButton,
+    showInvestigateButton: state.showInvestigateButton
   };
 };
 const mapDispatchToProps = (dispatch) => {
@@ -54,7 +68,10 @@ const mapDispatchToProps = (dispatch) => {
     right: () => dispatch(right()),
     straight: () => dispatch(straight()),
     attic: () => dispatch(attic()),
-    newgame: () => dispatch(newgame())
+    newgame: () => dispatch(newgame()),
+    swim: () => dispatch(swim()),
+    investigate: () => dispatch(investigate())
+  
   };
 };
 
