@@ -8,7 +8,6 @@ import { attic } from "../../redux/actions";
 import { newgame } from "../../redux/actions";
 import { swim } from "../../redux/actions";
 import { investigate } from "../../redux/actions"
-import { toggleTheme } from "../../redux/actions";
 
 import { connect } from "react-redux";
 

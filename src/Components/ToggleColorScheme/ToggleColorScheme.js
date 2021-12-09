@@ -1,27 +1,39 @@
-import React from 'react'
+import React from "react";
 import "./styles.css";
 import { connect } from "react-redux";
-import { toggleTheme } from "../../redux/actions";
-
+import { changeToDark, changeToLight } from "../../redux/actions";
 
 
 function ToggleColorScheme(props) {
-    return (
-     <button onClick={() => props.toggleTheme()} className="toggle-theme-button">
-         toggle theme
-     </button>
-    )
+  return (
+    <div>
+      <button
+        onClick={() => props.changeToLight()}
+        className="light-theme-button"
+      >
+        toggle theme
+      </button>
+      <button
+        onClick={() => props.changeToDark()}
+        
+        className="dark-theme-button"
+      >
+        Toggle theme
+      </button>
+    </div>
+  );
 }
 const mapStateToProps = (state) => {
-    return {
-      toggleTheme: state.toggleTheme,
+  return {
+    changeToDark: state.changeToDark,
+    changeToLight: state.changeToLight,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeToLight: () => dispatch(changeToLight()),
+    changeToDark: () => dispatch(changeToDark())
+  };
+};
 
-    };
-  };
-  const mapDispatchToProps = (dispatch) => {
-    return {
-toggleTheme: ()=> dispatch(toggleTheme())
-    };
-  };
-  
-  export default connect(mapStateToProps, mapDispatchToProps)(ToggleColorScheme);
+export default connect(mapStateToProps, mapDispatchToProps)(ToggleColorScheme);

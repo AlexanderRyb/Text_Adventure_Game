@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 export function TextBox(props) {
   console.log(props.textNode);
 
-  return <div className={props.colorTheme} >{props.textNode}
+  return <div className="text-container" >{props.textNode}
   </div>;
 }
 const mapStateToProps = (state) => {

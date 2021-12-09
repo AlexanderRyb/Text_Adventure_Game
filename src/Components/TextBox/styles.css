@@ -1,17 +1,10 @@
-.light {
-  border-left: 4px solid #76c883;
-  padding-left: 8px;
-  text-align: start;
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13pt;
-  background-color: white;
-}
-.dark {
+
+.text-container{
   border-left: 4px solid #76c883;
   padding-left: 8px;
   text-align: start;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
+
 }

@@ -29,6 +29,11 @@ const Reducer = (state = initialState, action) => {
       ...state, 
       colorTheme: "light"
     }
+    case "DARKTHEME": 
+    return {
+      ...state, 
+      colorTheme: "dark"
+    }
     case "START":
       return {
         ...state,
