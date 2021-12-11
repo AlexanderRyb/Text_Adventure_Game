@@ -1,6 +1,11 @@
-.light-theme-button{
-    display: block;
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
-.dark-theme-button{
-    display: block;
-}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }

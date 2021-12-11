@@ -1,11 +1,13 @@
 
 .text-container{
   border-left: 4px solid #76c883;
+  margin: 0 auto;
   padding-left: 8px;
   text-align: start;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
-  width: 100%;
+  width: fit-content;
+  text-align: center;
 
 }

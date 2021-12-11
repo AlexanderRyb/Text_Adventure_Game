@@ -5,21 +5,22 @@ import { changeToDark, changeToLight } from "../../redux/actions";
 
 
 function ToggleColorScheme(props) {
+  let isDarkThemeOn = true
+  if (props.colorTheme === "dark"){
+isDarkThemeOn = true
+  }
+  else{
+    isDarkThemeOn = false
+  }
   return (
     <div>
-      <button
-        onClick={() => props.changeToLight()}
-        className="light-theme-button"
+      
+      <input type="checkbox"
+      className="switch"
+      onClick={ isDarkThemeOn ? props.changeToLight : props.changeToDark}
       >
-        toggle theme
-      </button>
-      <button
-        onClick={() => props.changeToDark()}
         
-        className="dark-theme-button"
-      >
-        Toggle theme
-      </button>
+      </input>
     </div>
   );
 }
@@ -27,6 +28,7 @@ const mapStateToProps = (state) => {
   return {
     changeToDark: state.changeToDark,
     changeToLight: state.changeToLight,
+    colorTheme: state.colorTheme
   };
 };
 const mapDispatchToProps = (dispatch) => {
