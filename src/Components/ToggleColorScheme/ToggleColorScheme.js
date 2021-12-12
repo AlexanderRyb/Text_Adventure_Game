@@ -13,15 +13,16 @@ isDarkThemeOn = true
     isDarkThemeOn = false
   }
   return (
-    <div>
-      
+    
+      <label className="switch">
       <input type="checkbox"
-      className="switch"
+      
       onClick={ isDarkThemeOn ? props.changeToLight : props.changeToDark}
-      >
+      />
         
-      </input>
-    </div>
+      <span className="slider"></span>
+      </label>
+    
   );
 }
 const mapStateToProps = (state) => {

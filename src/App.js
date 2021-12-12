@@ -9,9 +9,10 @@ import { connect } from "react-redux";
 function App(props) {
   return (
     <div className="App" id={props.colorTheme}>
+      <ToggleColorScheme></ToggleColorScheme>
+
      <TextBox></TextBox>
      <ChoicesBox></ChoicesBox>
-<ToggleColorScheme></ToggleColorScheme>
     </div>
   );
 }
