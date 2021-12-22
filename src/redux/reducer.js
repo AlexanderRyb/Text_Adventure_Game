@@ -7,7 +7,10 @@ let textNodes = [
   "You tripped and broke your neck after falling down stairs",
   "There's nothing here",
   "You drowned. Better luck next time",
-  "You have been haunted to death"  
+  "You have been haunted to death",
+  "You encounter a sphinx. He has a riddle for you. 'All men are mortal. Socrates is a mortal. Does it follow that he is a man?" ,
+  "Wrong answer. Sphinx devours you.",
+  "Correct. Sphinx lets you go"
 ];
 
 const initialState = {
