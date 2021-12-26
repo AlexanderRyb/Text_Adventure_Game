@@ -23,6 +23,7 @@ const initialState = {
   showNewgameButton: "hidden",
   showSwimButton: "hidden",
   showInvestigateButton: "hidden",
+  showCrossRoadPicture: "hidden"
   
 };
 const Reducer = (state = initialState, action) => {
@@ -45,6 +46,7 @@ const Reducer = (state = initialState, action) => {
         showLeftButton: "visible",
         showStraightButton: "visible",
         showRightButton: "visible",
+        showCrossRoadPicture: "visible"
 
       };
     case "NEWGAME":

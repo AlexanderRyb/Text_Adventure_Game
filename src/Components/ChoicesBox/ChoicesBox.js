@@ -17,6 +17,7 @@ function ChoicesBox(props) {
       <button className={props.showStartButton} onClick={() => props.start()}>
         Start the game
       </button>
+      <div className={props.showCrossroadImage}><img src={"crossroads.jpg"}></img></div> 
       <button
         className={props.showNewgameButton}
         onClick={() => props.newgame()}
@@ -52,6 +53,7 @@ function ChoicesBox(props) {
 const mapStateToProps = (state) => {
   return {
     showStartButton: state.showStartButton,
+    showCrossroadImage: state.showCrossroadImage,
     showLeftButton: state.showLeftButton,
     showRightButton: state.showRightButton,
     showStraightButton: state.showStraightButton,
